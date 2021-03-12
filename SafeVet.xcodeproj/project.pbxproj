@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F6742FE25FB374A002FED17 /* SafeVetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6742FD25FB374A002FED17 /* SafeVetApp.swift */; };
+		7F67430025FB374A002FED17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6742FF25FB374A002FED17 /* ContentView.swift */; };
+		7F67430225FB374F002FED17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F67430125FB374F002FED17 /* Assets.xcassets */; };
+		7F67430525FB374F002FED17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F67430425FB374F002FED17 /* Preview Assets.xcassets */; };
+		7F67431025FB374F002FED17 /* SafeVetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67430F25FB374F002FED17 /* SafeVetTests.swift */; };
+		7F67431B25FB374F002FED17 /* SafeVetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67431A25FB374F002FED17 /* SafeVetUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F67430C25FB374F002FED17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6742F225FB374A002FED17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F6742F925FB374A002FED17;
+			remoteInfo = SafeVet;
+		};
+		7F67431725FB374F002FED17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F6742F225FB374A002FED17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F6742F925FB374A002FED17;
+			remoteInfo = SafeVet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F6742FA25FB374A002FED17 /* SafeVet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeVet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F6742FD25FB374A002FED17 /* SafeVetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeVetApp.swift; sourceTree = "<group>"; };
+		7F6742FF25FB374A002FED17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7F67430125FB374F002FED17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F67430425FB374F002FED17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F67430625FB374F002FED17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F67430B25FB374F002FED17 /* SafeVetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeVetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F67430F25FB374F002FED17 /* SafeVetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeVetTests.swift; sourceTree = "<group>"; };
+		7F67431125FB374F002FED17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F67431625FB374F002FED17 /* SafeVetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeVetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F67431A25FB374F002FED17 /* SafeVetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeVetUITests.swift; sourceTree = "<group>"; };
+		7F67431C25FB374F002FED17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F6742F725FB374A002FED17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F67430825FB374F002FED17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F67431325FB374F002FED17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F6742F125FB374A002FED17 = {
+			isa = PBXGroup;
+			children = (
+				7F6742FC25FB374A002FED17 /* SafeVet */,
+				7F67430E25FB374F002FED17 /* SafeVetTests */,
+				7F67431925FB374F002FED17 /* SafeVetUITests */,
+				7F6742FB25FB374A002FED17 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F6742FB25FB374A002FED17 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F6742FA25FB374A002FED17 /* SafeVet.app */,
+				7F67430B25FB374F002FED17 /* SafeVetTests.xctest */,
+				7F67431625FB374F002FED17 /* SafeVetUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F6742FC25FB374A002FED17 /* SafeVet */ = {
+			isa = PBXGroup;
+			children = (
+				7F6742FD25FB374A002FED17 /* SafeVetApp.swift */,
+				7F6742FF25FB374A002FED17 /* ContentView.swift */,
+				7F67430125FB374F002FED17 /* Assets.xcassets */,
+				7F67430625FB374F002FED17 /* Info.plist */,
+				7F67430325FB374F002FED17 /* Preview Content */,
+			);
+			path = SafeVet;
+			sourceTree = "<group>";
+		};
+		7F67430325FB374F002FED17 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7F67430425FB374F002FED17 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F67430E25FB374F002FED17 /* SafeVetTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F67430F25FB374F002FED17 /* SafeVetTests.swift */,
+				7F67431125FB374F002FED17 /* Info.plist */,
+			);
+			path = SafeVetTests;
+			sourceTree = "<group>";
+		};
+		7F67431925FB374F002FED17 /* SafeVetUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7F67431A25FB374F002FED17 /* SafeVetUITests.swift */,
+				7F67431C25FB374F002FED17 /* Info.plist */,
+			);
+			path = SafeVetUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F6742F925FB374A002FED17 /* SafeVet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F67431F25FB374F002FED17 /* Build configuration list for PBXNativeTarget "SafeVet" */;
+			buildPhases = (
+				7F6742F625FB374A002FED17 /* Sources */,
+				7F6742F725FB374A002FED17 /* Frameworks */,
+				7F6742F825FB374A002FED17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafeVet;
+			productName = SafeVet;
+			productReference = 7F6742FA25FB374A002FED17 /* SafeVet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7F67430A25FB374F002FED17 /* SafeVetTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F67432225FB374F002FED17 /* Build configuration list for PBXNativeTarget "SafeVetTests" */;
+			buildPhases = (
+				7F67430725FB374F002FED17 /* Sources */,
+				7F67430825FB374F002FED17 /* Frameworks */,
+				7F67430925FB374F002FED17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F67430D25FB374F002FED17 /* PBXTargetDependency */,
+			);
+			name = SafeVetTests;
+			productName = SafeVetTests;
+			productReference = 7F67430B25FB374F002FED17 /* SafeVetTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7F67431525FB374F002FED17 /* SafeVetUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F67432525FB374F002FED17 /* Build configuration list for PBXNativeTarget "SafeVetUITests" */;
+			buildPhases = (
+				7F67431225FB374F002FED17 /* Sources */,
+				7F67431325FB374F002FED17 /* Frameworks */,
+				7F67431425FB374F002FED17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F67431825FB374F002FED17 /* PBXTargetDependency */,
+			);
+			name = SafeVetUITests;
+			productName = SafeVetUITests;
+			productReference = 7F67431625FB374F002FED17 /* SafeVetUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F6742F225FB374A002FED17 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					7F6742F925FB374A002FED17 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7F67430A25FB374F002FED17 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7F6742F925FB374A002FED17;
+					};
+					7F67431525FB374F002FED17 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 7F6742F925FB374A002FED17;
+					};
+				};
+			};
+			buildConfigurationList = 7F6742F525FB374A002FED17 /* Build configuration list for PBXProject "SafeVet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F6742F125FB374A002FED17;
+			productRefGroup = 7F6742FB25FB374A002FED17 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F6742F925FB374A002FED17 /* SafeVet */,
+				7F67430A25FB374F002FED17 /* SafeVetTests */,
+				7F67431525FB374F002FED17 /* SafeVetUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F6742F825FB374A002FED17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F67430525FB374F002FED17 /* Preview Assets.xcassets in Resources */,
+				7F67430225FB374F002FED17 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F67430925FB374F002FED17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F67431425FB374F002FED17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F6742F625FB374A002FED17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F67430025FB374A002FED17 /* ContentView.swift in Sources */,
+				7F6742FE25FB374A002FED17 /* SafeVetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F67430725FB374F002FED17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F67431025FB374F002FED17 /* SafeVetTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F67431225FB374F002FED17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F67431B25FB374F002FED17 /* SafeVetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F67430D25FB374F002FED17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F6742F925FB374A002FED17 /* SafeVet */;
+			targetProxy = 7F67430C25FB374F002FED17 /* PBXContainerItemProxy */;
+		};
+		7F67431825FB374F002FED17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F6742F925FB374A002FED17 /* SafeVet */;
+			targetProxy = 7F67431725FB374F002FED17 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7F67431D25FB374F002FED17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7F67431E25FB374F002FED17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F67432025FB374F002FED17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SafeVet/Preview Content\"";
+				DEVELOPMENT_TEAM = 52JG6B2725;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SafeVet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafeVet.SafeVet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7F67432125FB374F002FED17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SafeVet/Preview Content\"";
+				DEVELOPMENT_TEAM = 52JG6B2725;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SafeVet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafeVet.SafeVet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7F67432325FB374F002FED17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52JG6B2725;
+				INFOPLIST_FILE = SafeVetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafeVet.SafeVetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafeVet.app/SafeVet";
+			};
+			name = Debug;
+		};
+		7F67432425FB374F002FED17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52JG6B2725;
+				INFOPLIST_FILE = SafeVetTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafeVet.SafeVetTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafeVet.app/SafeVet";
+			};
+			name = Release;
+		};
+		7F67432625FB374F002FED17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52JG6B2725;
+				INFOPLIST_FILE = SafeVetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafeVet.SafeVetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SafeVet;
+			};
+			name = Debug;
+		};
+		7F67432725FB374F002FED17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52JG6B2725;
+				INFOPLIST_FILE = SafeVetUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SafeVet.SafeVetUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SafeVet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F6742F525FB374A002FED17 /* Build configuration list for PBXProject "SafeVet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F67431D25FB374F002FED17 /* Debug */,
+				7F67431E25FB374F002FED17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F67431F25FB374F002FED17 /* Build configuration list for PBXNativeTarget "SafeVet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F67432025FB374F002FED17 /* Debug */,
+				7F67432125FB374F002FED17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F67432225FB374F002FED17 /* Build configuration list for PBXNativeTarget "SafeVetTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F67432325FB374F002FED17 /* Debug */,
+				7F67432425FB374F002FED17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F67432525FB374F002FED17 /* Build configuration list for PBXNativeTarget "SafeVetUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F67432625FB374F002FED17 /* Debug */,
+				7F67432725FB374F002FED17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F6742F225FB374A002FED17 /* Project object */;
+}
