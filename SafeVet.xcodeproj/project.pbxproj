@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F3052982600B3B100D129BD /* login1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3052972600B3B100D129BD /* login1.swift */; };
+		7F5821C226004A660015F93B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5821C126004A660015F93B /* MapView.swift */; };
+		7F5821CA26004DE00015F93B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5821C926004DE00015F93B /* MainView.swift */; };
 		7F6742FE25FB374A002FED17 /* SafeVetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6742FD25FB374A002FED17 /* SafeVetApp.swift */; };
 		7F67430025FB374A002FED17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6742FF25FB374A002FED17 /* ContentView.swift */; };
 		7F67430225FB374F002FED17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F67430125FB374F002FED17 /* Assets.xcassets */; };
 		7F67430525FB374F002FED17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F67430425FB374F002FED17 /* Preview Assets.xcassets */; };
 		7F67431025FB374F002FED17 /* SafeVetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67430F25FB374F002FED17 /* SafeVetTests.swift */; };
 		7F67431B25FB374F002FED17 /* SafeVetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67431A25FB374F002FED17 /* SafeVetUITests.swift */; };
+		7FFA724D2601901400AA0274 /* splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFA724C2601901400AA0274 /* splash.storyboard */; };
+		7FFA725B2601BF8800AA0274 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA725A2601BF8800AA0274 /* Register.swift */; };
+		7FFD09E525FF37B60072E5DC /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD09E425FF37B60072E5DC /* ImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F3052972600B3B100D129BD /* login1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login1.swift; sourceTree = "<group>"; };
+		7F5821C126004A660015F93B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7F5821C926004DE00015F93B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		7F6742FA25FB374A002FED17 /* SafeVet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeVet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F6742FD25FB374A002FED17 /* SafeVetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeVetApp.swift; sourceTree = "<group>"; };
 		7F6742FF25FB374A002FED17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +54,9 @@
 		7F67431625FB374F002FED17 /* SafeVetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeVetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F67431A25FB374F002FED17 /* SafeVetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeVetUITests.swift; sourceTree = "<group>"; };
 		7F67431C25FB374F002FED17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FFA724C2601901400AA0274 /* splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = splash.storyboard; sourceTree = "<group>"; };
+		7FFA725A2601BF8800AA0274 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		7FFD09E425FF37B60072E5DC /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +107,13 @@
 		7F6742FC25FB374A002FED17 /* SafeVet */ = {
 			isa = PBXGroup;
 			children = (
+				7F3052972600B3B100D129BD /* login1.swift */,
+				7FFA725A2601BF8800AA0274 /* Register.swift */,
+				7FFA724C2601901400AA0274 /* splash.storyboard */,
 				7F6742FD25FB374A002FED17 /* SafeVetApp.swift */,
-				7F6742FF25FB374A002FED17 /* ContentView.swift */,
 				7F67430125FB374F002FED17 /* Assets.xcassets */,
 				7F67430625FB374F002FED17 /* Info.plist */,
+				7FC8B7732601738800BA9548 /* Mat */,
 				7F67430325FB374F002FED17 /* Preview Content */,
 			);
 			path = SafeVet;
@@ -128,6 +143,17 @@
 				7F67431C25FB374F002FED17 /* Info.plist */,
 			);
 			path = SafeVetUITests;
+			sourceTree = "<group>";
+		};
+		7FC8B7732601738800BA9548 /* Mat */ = {
+			isa = PBXGroup;
+			children = (
+				7FFD09E425FF37B60072E5DC /* ImageView.swift */,
+				7F5821C926004DE00015F93B /* MainView.swift */,
+				7F5821C126004A660015F93B /* MapView.swift */,
+				7F6742FF25FB374A002FED17 /* ContentView.swift */,
+			);
+			path = Mat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFA724D2601901400AA0274 /* splash.storyboard in Resources */,
 				7F67430525FB374F002FED17 /* Preview Assets.xcassets in Resources */,
 				7F67430225FB374F002FED17 /* Assets.xcassets in Resources */,
 			);
@@ -259,7 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFD09E525FF37B60072E5DC /* ImageView.swift in Sources */,
+				7F3052982600B3B100D129BD /* login1.swift in Sources */,
+				7F5821C226004A660015F93B /* MapView.swift in Sources */,
 				7F67430025FB374A002FED17 /* ContentView.swift in Sources */,
+				7FFA725B2601BF8800AA0274 /* Register.swift in Sources */,
+				7F5821CA26004DE00015F93B /* MainView.swift in Sources */,
 				7F6742FE25FB374A002FED17 /* SafeVetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,12 +454,12 @@
 				DEVELOPMENT_TEAM = 52JG6B2725;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SafeVet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SafeVet.SafeVet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tec.SafeVet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,12 +476,12 @@
 				DEVELOPMENT_TEAM = 52JG6B2725;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SafeVet/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SafeVet.SafeVet;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tec.SafeVet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
