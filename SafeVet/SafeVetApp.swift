@@ -11,7 +11,7 @@ import SwiftUI
 struct SafeVetApp: App {
     var body: some Scene {
         WindowGroup {
-            login1()
+            Menu()
         }
     }
 }

@@ -16,6 +16,7 @@ struct Register: View {
     @State private var sexo   = ""
     @State private var fechna = ""
     @State private var correo = ""
+    @State private var username = ""
     @State private var password = ""
     @State private var sexIndex = 0
     @State private var birthDate = Date()
@@ -243,8 +244,8 @@ struct Register: View {
                         {
                         Picker(selection: $sexIndex, label: Text("Sexo")){
                             
-                            Text("Masculino").foregroundColor(Color.white.opacity(0.9)).tag(1)
-                            Text("Femenino").foregroundColor(Color.white.opacity(0.9)).tag(2)
+                            Text("Masculino").foregroundColor(Color.black.opacity(0.9)).tag(1)
+                            Text("Femenino").foregroundColor(Color.black.opacity(0.9)).tag(2)
                         }.frame(width: 220, height: 30)
                         }
                     }
@@ -293,6 +294,9 @@ struct Register: View {
                     .padding(.bottom)
                     
                     //Correo
+                    
+                    VStack
+                    {
                     HStack
                     {
                     VStack(alignment: .leading, spacing: 12, content:
@@ -329,8 +333,44 @@ struct Register: View {
                     VStack
                     {
                     
+                        HStack
+                        {
+                            
+
+                        VStack(alignment: .leading, spacing: 12, content:
+                        {
+                            Text("Nombre usuario")
+                                .font(.title3)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color.black)
+                            
+                        }).padding(.horizontal,10)
+                        
+                            
+                            Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
+                            
+                        }.padding(5)
+                        .padding(.leading,15)
+                        
+                        HStack
+                        {
+                            Image(systemName: "person.fill")
+                                .font(.title2)
+                                .foregroundColor(.black)
+                                .frame(width: 35)
+                            
+                            SecureField("Ej. bryanvaz14", text:$username )
+                        }
+                        .padding()
+                        .background(Color.black.opacity(0.1))
+                        .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+                        .padding(.horizontal,30)
+                        .padding(.bottom)
+                        
                     HStack
                     {
+                        
+
                     VStack(alignment: .leading, spacing: 12, content:
                     {
                         Text("Contraseña")
@@ -356,7 +396,7 @@ struct Register: View {
                         SecureField("Contraseña", text:$password )
                     }
                     .padding()
-                    .background(Color.black.opacity(0.2))
+                    .background(Color.black.opacity(0.1))
                     .cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
                     .padding(.horizontal,30)
                     .padding(.bottom)
@@ -377,15 +417,15 @@ struct Register: View {
                         .padding(.vertical)
                         }
                     }
-                    
-                    
                 }
+                    
+            }
                 
                 
                
                 
                 
-            }
+        }
             }.background(Color.white).padding(.horizontal,30).cornerRadius(60)
 
             
@@ -401,3 +441,4 @@ struct Register_Previews: PreviewProvider {
         
     }
 }
+
