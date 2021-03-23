@@ -437,7 +437,7 @@ struct Register: View {
 struct Register_Previews: PreviewProvider {
     static var previews: some View {
         
-            Register()
+        Register().navigationBarHidden(false)
         
     }
 }

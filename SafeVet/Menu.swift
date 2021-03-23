@@ -52,12 +52,13 @@ struct home : View
                             Spacer()
                         }
                         
-                        Text("Home").padding()
+                        Text("Citas").padding()
                     }
                     .padding(.top,20)
                     .foregroundColor(.primary)
                     .padding(.horizontal, 15)
                     .overlay(Rectangle().stroke(Color.primary.opacity(0.1),lineWidth: 1).shadow(radius: 3).edgesIgnoringSafeArea(.all))
+                    .background(Color.white)
                    
                     
                     Spacer()
@@ -65,7 +66,7 @@ struct home : View
                     Text("Aquí va el main we")
                    
                     Spacer()
-                }
+                }.background(Color("blue")).ignoresSafeArea()
                 
                 
             }
@@ -75,13 +76,14 @@ struct home : View
                 menu(dark: self.$dark, show: self.$show)
                     .preferredColorScheme(self.dark ? .dark : .light)
                     .offset(x: self.show ? 0 : -UIScreen.main.bounds.width / 1.5)
+                    
                 
                 Spacer(minLength: 0)
             }
         }
-        .padding(5)
+        .padding(0)
         .background(Color.primary.opacity(self.show ? (self.dark ? 0.05 : 0.2) :0))
-        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        .edgesIgnoringSafeArea(.all)
     }
 }
 
@@ -228,7 +230,7 @@ struct menu : View {
         }
         .foregroundColor(.primary)
         .padding(.horizontal, 20)
-        .frame(width: UIScreen.main.bounds.width / 1.5)
+        .frame(width: UIScreen.main.bounds.width / 1.6)
         .background((self.dark ? Color.black : Color.white).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/))
         .overlay(Rectangle().stroke(Color.primary.opacity(0.2),lineWidth: 2).shadow(radius: 2)).edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
        

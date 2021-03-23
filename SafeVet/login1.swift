@@ -17,7 +17,7 @@ struct login1: View
         {
             Home()
                 .preferredColorScheme(.light)
-                .navigationBarHidden(true)
+                .navigationBarHidden(false)
         }
     }
 }
@@ -28,11 +28,15 @@ struct Home : View
     
     var alert : Alert
     {
-        Alert(title: Text("Has inciado sesión"), message: Text("Inicio de sesión correcto"), dismissButton:.default(Text("Aceptar")))
+        Alert(title: Text(username), message: Text(password), dismissButton:.default(Text("Aceptar")))
     }
         
      @State var username = ""
      @State var password = ""
+     @AppStorage ("stored_User") var user = "bryanvaz14@gmail.com"
+     @AppStorage ("Status") var logged = false
+    
+    
     var body : some View
     {
         ScrollView
@@ -80,7 +84,8 @@ struct Home : View
                             .foregroundColor(.black)
                             .frame(width: 35)
                         
-                        TextField("Usuario", text: $username).foregroundColor(.white)
+                        TextField("Usuario", text: $username).foregroundColor(.black)
+                            .autocapitalization(.none)
                     }
                     .padding()
                     .background(Color.gray.opacity( 0.2))
@@ -96,6 +101,7 @@ struct Home : View
                             .frame(width: 35)
                         
                         SecureField("Contraseña", text: $password).foregroundColor(.black)
+                            .autocapitalization(.none)
                     }
                     .padding()
                     .background(Color.gray.opacity( 0.2))
