@@ -78,6 +78,8 @@ struct home : View
                     .offset(x: self.show ? 0 : -UIScreen.main.bounds.width / 1.5)
                     
                 
+                
+                
                 Spacer(minLength: 0)
             }
         }

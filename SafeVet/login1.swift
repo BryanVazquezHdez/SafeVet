@@ -42,7 +42,7 @@ struct Home : View
         ScrollView
         {
             VStack(alignment: .center)
-            {
+            {  
                 
                 Image("logoalt")
                     .resizable()
@@ -113,7 +113,11 @@ struct Home : View
                     {
                         Button(action: {
                             self.showAlert.toggle()
+                            
                         }, label: {
+                            
+                            NavigationLink(destination: Principal().navigationBarBackButtonHidden(true))
+                            {
                             Text("Iniciar sesión")
                                 .fontWeight(.heavy)
                                 .foregroundColor(.white)
@@ -121,7 +125,7 @@ struct Home : View
                                 .frame(width: UIScreen.main.bounds.width - 150)
                                 .background(Color("blue"))
                                 .clipShape(Capsule())
-                            
+                            }.navigationBarBackButtonHidden(true)
                         })
                         .padding(.top)
                     }.alert(isPresented: self.$showAlert) { () -> Alert in self.alert
