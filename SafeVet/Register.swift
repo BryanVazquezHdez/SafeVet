@@ -25,7 +25,7 @@ struct Register: View {
         
        ScrollView
        {
-
+        
         
         VStack
         {

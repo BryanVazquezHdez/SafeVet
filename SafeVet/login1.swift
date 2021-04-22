@@ -39,8 +39,7 @@ struct Home : View
     
     var body : some View
     {
-        ScrollView
-        {
+        
             VStack(alignment: .center)
             {  
                 
@@ -172,14 +171,17 @@ struct Home : View
                 }.background(Color.white)
                 .padding(.horizontal,40)
                 .padding(.vertical)
+                .padding(.bottom,70)
                 .cornerRadius(60)
                 Spacer(minLength: 10)
+                
+                Spacer()
             }
+            .background(Color("blue").ignoresSafeArea(.all,edges: .all))
         
         
         
         
-        }.background(Color("blue").ignoresSafeArea(.all,edges: .all))
     }
 }
 
