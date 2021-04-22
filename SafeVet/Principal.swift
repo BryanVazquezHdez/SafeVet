@@ -64,6 +64,7 @@ struct Principal: View
 
 struct MainView: View {
     
+    @State  var modal = false
     @Binding var showMenu: Bool
     
     var body: some View
@@ -148,7 +149,7 @@ struct MainView: View {
                 HStack {
                     Spacer()
                     Button(action: {
-                        
+                        self.modal.toggle()
                     }, label: {
                         Image(systemName: "plus")
                            
@@ -158,6 +159,8 @@ struct MainView: View {
                             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                             .foregroundColor(.black)
                             .shadow(radius:10 )
+                    }).sheet(isPresented: self.$modal, content: {
+                        Modal_Details()
                     })
                     .padding()
                     .shadow(radius: 2 )

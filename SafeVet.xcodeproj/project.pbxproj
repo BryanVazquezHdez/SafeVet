@@ -19,6 +19,7 @@
 		7F67431B25FB374F002FED17 /* SafeVetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67431A25FB374F002FED17 /* SafeVetUITests.swift */; };
 		7FA702D3262BF12A00DE5C7C /* Mainp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA702D2262BF12A00DE5C7C /* Mainp.swift */; };
 		7FC2250926309D7C009ABFE6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC2250826309D7C009ABFE6 /* MenuView.swift */; };
+		7FC44F4F2631313E0018AB20 /* Modal_Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC44F4E2631313E0018AB20 /* Modal_Details.swift */; };
 		7FD88C2F262C29EA0071C3F7 /* Principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD88C2E262C29EA0071C3F7 /* Principal.swift */; };
 		7FD88C37262C2CA80071C3F7 /* SegundaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD88C36262C2CA80071C3F7 /* SegundaView.swift */; };
 		7FDD895B26072E70005BB28D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDD895A26072E70005BB28D /* Menu.swift */; };
@@ -63,6 +64,7 @@
 		7F67431C25FB374F002FED17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA702D2262BF12A00DE5C7C /* Mainp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mainp.swift; sourceTree = "<group>"; };
 		7FC2250826309D7C009ABFE6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		7FC44F4E2631313E0018AB20 /* Modal_Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal_Details.swift; sourceTree = "<group>"; };
 		7FD88C2E262C29EA0071C3F7 /* Principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Principal.swift; sourceTree = "<group>"; };
 		7FD88C36262C2CA80071C3F7 /* SegundaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaView.swift; sourceTree = "<group>"; };
 		7FDD895A26072E70005BB28D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				7F67430625FB374F002FED17 /* Info.plist */,
 				7FC8B7732601738800BA9548 /* Mat */,
 				7F67430325FB374F002FED17 /* Preview Content */,
+				7FC44F4E2631313E0018AB20 /* Modal_Details.swift */,
 			);
 			path = SafeVet;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FFD09E525FF37B60072E5DC /* ImageView.swift in Sources */,
+				7FC44F4F2631313E0018AB20 /* Modal_Details.swift in Sources */,
 				7F2E0BE4262BFF8E00687F88 /* SegundaVista.swift in Sources */,
 				7F3052982600B3B100D129BD /* login1.swift in Sources */,
 				7FDD895B26072E70005BB28D /* Menu.swift in Sources */,
