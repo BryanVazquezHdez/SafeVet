@@ -11,12 +11,20 @@ struct MenuView: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image(systemName: "person.fill")
-                    .foregroundColor(.gray)
-                    .imageScale(.large)
-                Text("Perfil")
-                    .foregroundColor(.gray)
-                    .font(.headline)
+                HStack{
+                    Image(systemName: "person.fill")
+                        .foregroundColor(.gray)
+                        .imageScale(.large)
+                    
+                    Button(action: {}, label: {
+                        NavigationLink(
+                            destination: Profile()){
+                            Text("Perfil")
+                                .foregroundColor(.gray)
+                                .font(.title2)
+                        }
+                    })
+                }
             }
             .padding(.top, 100)
             HStack {
@@ -25,16 +33,27 @@ struct MenuView: View {
                     .imageScale(.large)
                 Text("Mascotas")
                     .foregroundColor(.gray)
-                    .font(.headline)
+                    .font(.title2)
             }
             .padding(.top, 30)
             HStack {
                 Image(systemName: "calendar.circle.fill")
                     .foregroundColor(.gray)
                     .imageScale(.large)
-                Text("Citas")
-                    .foregroundColor(.gray)
-                    .font(.headline)
+                Button(action: {}, label: {
+                    NavigationLink(
+                        destination: Principal()){
+                        Text("Citas")
+                            .foregroundColor(.gray)
+                            .font(.title2)
+                            .navigationBarBackButtonHidden(true)
+                            
+                    }
+                    
+                    
+                })
+                
+                
             }
             .padding(.top, 30)
             HStack {
@@ -43,7 +62,7 @@ struct MenuView: View {
                     .imageScale(.large)
                 Text("Expedientes")
                     .foregroundColor(.gray)
-                    .font(.headline)
+                    .font(.title2)
             }
             .padding(.top, 30)
             
@@ -53,7 +72,7 @@ struct MenuView: View {
                     .imageScale(.large)
                 Text("Ajustes")
                     .foregroundColor(.gray)
-                    .font(.headline)
+                    .font(.title2)
             }
             .padding(.top, 500)
             Spacer()

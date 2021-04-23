@@ -17,11 +17,11 @@
 		7F67430525FB374F002FED17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F67430425FB374F002FED17 /* Preview Assets.xcassets */; };
 		7F67431025FB374F002FED17 /* SafeVetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67430F25FB374F002FED17 /* SafeVetTests.swift */; };
 		7F67431B25FB374F002FED17 /* SafeVetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F67431A25FB374F002FED17 /* SafeVetUITests.swift */; };
+		7F7B2E04263251C700B1B680 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7B2E03263251C700B1B680 /* Profile.swift */; };
 		7FA702D3262BF12A00DE5C7C /* Mainp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA702D2262BF12A00DE5C7C /* Mainp.swift */; };
 		7FC2250926309D7C009ABFE6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC2250826309D7C009ABFE6 /* MenuView.swift */; };
 		7FC44F4F2631313E0018AB20 /* Modal_Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC44F4E2631313E0018AB20 /* Modal_Details.swift */; };
 		7FD88C2F262C29EA0071C3F7 /* Principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD88C2E262C29EA0071C3F7 /* Principal.swift */; };
-		7FD88C37262C2CA80071C3F7 /* SegundaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD88C36262C2CA80071C3F7 /* SegundaView.swift */; };
 		7FDD895B26072E70005BB28D /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDD895A26072E70005BB28D /* Menu.swift */; };
 		7FFA724D2601901400AA0274 /* splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFA724C2601901400AA0274 /* splash.storyboard */; };
 		7FFA725B2601BF8800AA0274 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA725A2601BF8800AA0274 /* Register.swift */; };
@@ -62,11 +62,11 @@
 		7F67431625FB374F002FED17 /* SafeVetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafeVetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F67431A25FB374F002FED17 /* SafeVetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeVetUITests.swift; sourceTree = "<group>"; };
 		7F67431C25FB374F002FED17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F7B2E03263251C700B1B680 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		7FA702D2262BF12A00DE5C7C /* Mainp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mainp.swift; sourceTree = "<group>"; };
 		7FC2250826309D7C009ABFE6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		7FC44F4E2631313E0018AB20 /* Modal_Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modal_Details.swift; sourceTree = "<group>"; };
 		7FD88C2E262C29EA0071C3F7 /* Principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Principal.swift; sourceTree = "<group>"; };
-		7FD88C36262C2CA80071C3F7 /* SegundaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaView.swift; sourceTree = "<group>"; };
 		7FDD895A26072E70005BB28D /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		7FFA724C2601901400AA0274 /* splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = splash.storyboard; sourceTree = "<group>"; };
 		7FFA725A2601BF8800AA0274 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 			children = (
 				7FA702C9262BF0C200DE5C7C /* Pruebas */,
 				7F6742FC25FB374A002FED17 /* SafeVet */,
-				7F67430E25FB374F002FED17 /* SafeVetTests */,
 				7F67431925FB374F002FED17 /* SafeVetUITests */,
 				7F6742FB25FB374A002FED17 /* Products */,
 			);
@@ -124,16 +123,17 @@
 			children = (
 				7FD88C2E262C29EA0071C3F7 /* Principal.swift */,
 				7FC2250826309D7C009ABFE6 /* MenuView.swift */,
+				7FC44F4E2631313E0018AB20 /* Modal_Details.swift */,
+				7F7B2E03263251C700B1B680 /* Profile.swift */,
 				7F3052972600B3B100D129BD /* login1.swift */,
 				7FFA725A2601BF8800AA0274 /* Register.swift */,
-				7FD88C36262C2CA80071C3F7 /* SegundaView.swift */,
 				7FFA724C2601901400AA0274 /* splash.storyboard */,
 				7F6742FD25FB374A002FED17 /* SafeVetApp.swift */,
 				7F67430125FB374F002FED17 /* Assets.xcassets */,
 				7F67430625FB374F002FED17 /* Info.plist */,
+				7F67430E25FB374F002FED17 /* SafeVetTests */,
 				7FC8B7732601738800BA9548 /* Mat */,
 				7F67430325FB374F002FED17 /* Preview Content */,
-				7FC44F4E2631313E0018AB20 /* Modal_Details.swift */,
 			);
 			path = SafeVet;
 			sourceTree = "<group>";
@@ -316,13 +316,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FFD09E525FF37B60072E5DC /* ImageView.swift in Sources */,
+				7F7B2E04263251C700B1B680 /* Profile.swift in Sources */,
 				7FC44F4F2631313E0018AB20 /* Modal_Details.swift in Sources */,
 				7F2E0BE4262BFF8E00687F88 /* SegundaVista.swift in Sources */,
 				7F3052982600B3B100D129BD /* login1.swift in Sources */,
 				7FDD895B26072E70005BB28D /* Menu.swift in Sources */,
 				7FD88C2F262C29EA0071C3F7 /* Principal.swift in Sources */,
 				7F5821C226004A660015F93B /* MapView.swift in Sources */,
-				7FD88C37262C2CA80071C3F7 /* SegundaView.swift in Sources */,
 				7FC2250926309D7C009ABFE6 /* MenuView.swift in Sources */,
 				7F67430025FB374A002FED17 /* ContentView.swift in Sources */,
 				7F2E0BD9262BF22200687F88 /* NumeroRandom.swift in Sources */,
