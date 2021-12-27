@@ -56,6 +56,7 @@ struct Modal_Details: View {
                             Text("Snoopy").foregroundColor(Color.black.opacity(0.9)).tag(2)
                         }.frame(width: 220, height: 30)
                     }
+                    
                 }
                 .padding()
                 .background(Color.gray.opacity(0.2))
@@ -81,7 +82,7 @@ struct Modal_Details: View {
                     
                     Section
                     {
-                        Picker(selection: $indMas, label: Text("Sexo")){
+                        Picker(selection: $indMas, label: Text("Cita")){
                             
                             Text("Baño/Corte").foregroundColor(Color.black.opacity(0.9)).tag(1)
                             Text("Atención médica").foregroundColor(Color.black.opacity(0.9)).tag(2)
@@ -169,9 +170,14 @@ struct Modal_Details: View {
                     Text("")
                 }
                 
-            }.background(Color.white).padding(.horizontal,40).cornerRadius(60)
+            }.background(Color.white)
+            .padding(.horizontal,40)
+        
+            
+            
          
      }.background(Color("blue").ignoresSafeArea(.all,edges: .all))
+        .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
     }
 }
 
@@ -180,3 +186,4 @@ struct Modal_Details_Previews: PreviewProvider {
         Modal_Details()
     }
 }
+

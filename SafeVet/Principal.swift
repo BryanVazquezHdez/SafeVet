@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import Combine
 
 struct Principal: View
 {
     
-    @State var showMenu = false
     
+    
+    @State var showMenu = false
+    init() {
+        UITableViewCell.appearance().backgroundColor = .green
+        UITableView.appearance().backgroundColor = #colorLiteral(red: 0, green: 0.7445648313, blue: 0.9996808171, alpha: 1)
+    }
     
     var body: some View
     {
@@ -46,13 +52,15 @@ struct Principal: View
             
         }.background(Color.black)
         
-        .navigationBarTitle("Citas", displayMode: .inline)
+        .navigationBarTitle("SafeVet", displayMode: .inline)
         .navigationBarItems(leading: (
             Button(action: {
                 withAnimation {
                     self.showMenu.toggle()
                 }
             }) {
+                Image(systemName: "chevron.backward")
+                    .imageScale(.large)
                 
                 Image(systemName: "line.horizontal.3")
                     .imageScale(.large)
@@ -66,80 +74,69 @@ struct MainView: View {
     
     @State  var modal = false
     @Binding var showMenu: Bool
+    @ObservedObject var appointmentManager = AppointManager()
+    
     
     var body: some View
     {
         VStack(alignment: .center)
         {
-            
-            VStack(alignment: .center)
+            VStack
             {
-                VStack
-                {
-                    VStack(alignment: .center, spacing: 12, content:
+                VStack(alignment: .center, spacing: 12, content:
+                        {
+                            
+                            Text("Datos de cita")
+                                .font(.title2)
+                                .fontWeight(.bold)
+                                .foregroundColor(.black)
+                                .multilineTextAlignment(.center)
+                                .padding(.bottom)
+                            
+                            HStack(alignment:.center)
                             {
+                                Image(systemName: "hare.fill")
+                                Text(self.appointmentManager.appointList?.data?.mascota.nombre ?? "NO DATA")
+                                    .foregroundColor(Color.black.opacity(0.5))
+                                    .multilineTextAlignment(.leading)
+                                Text("  ")
+                                Text("  ")
+                                Image(systemName: "calendar.badge.clock")
+                                Text("Fecha: ")
+                                Text(CustomDateFormatter.createDefault(dateString: self.appointmentManager.appointList?.data?.dia ) )
+                                    .foregroundColor(Color.black.opacity(0.5))
+                                    .multilineTextAlignment(.leading)
+                            }
+                            
+                            HStack
+                            {
+                                Image(systemName: "calendar.badge.plus")
+                                Text("Tipo: ")
                                 
-                                Text("Dr. Ramírez Beltran")
-                                    .font(.title2)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(.black)
-                                    .multilineTextAlignment(.center)
-     
-                                HStack(alignment:.center)
-                                {
-                                    Image(systemName: "hare.fill")
-                                    Text("Firulais")
-                                        .foregroundColor(Color.black.opacity(0.5))
-                                        .multilineTextAlignment(.leading)
-                                    Text("  ")
-                                    Text("  ")
-                                    Image(systemName: "calendar.badge.clock")
-                                    Text("15/03/2021 09:00 AM")
-                                }
-       
-                            })
-                    
-                }
-                .padding()
-                
-                
-                
-            }.background(Color.white)
-            
-        }.frame(width: 400, height: 700, alignment: .top)
+                                Text(self.appointmentManager.appointList?.data?.tipo ?? "NO DATA")
+                                    .foregroundColor(Color.black.opacity(0.5))
+                                    .multilineTextAlignment(.leading)
+                                Text("  ")
+                                Text("  ")
+                                
+                                Image(systemName: "clock")
+                                Text("Hora")
+                                Text(self.appointmentManager.appointList?.data?.hora ?? "NO DATA")
+                                    .foregroundColor(Color.black.opacity(0.5))
+                                    .multilineTextAlignment(.leading)
+                            }
+                        }).padding()
+
+            }
+            .padding()
+              
+        }.background(Color.white)
+        .shadow(radius:10)
+        .padding(.bottom,550)
         
-        VStack(alignment: .center)
-        {
-            
-            VStack(alignment: .center)
-            {
-                VStack
-                {
-                    VStack(alignment: .center, spacing: 12, content:
-                            {
-                                
-                                Text("Dr. Garcia Gerardo")
-                                    .font(.title2)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(.black)
-                                    .multilineTextAlignment(.center)
-                                
-                                HStack(alignment:.center)
-                                {
-                                    Image(systemName: "hare.fill")
-                                    Text("Snoopy")
-                                        .foregroundColor(Color.black.opacity(0.5))
-                                        .multilineTextAlignment(.leading)
-                                    Text("  ")
-                                    Text("  ")
-                                    Image(systemName: "calendar.badge.clock")
-                                    Text("29/12/2021 03:00 PM")
-                                }
-                            })
-                }
-                .padding()
-            }.background(Color.white)
-        }.frame(width: 400, height: 450, alignment: .top)
+        
+        
+        
         
         
         ZStack
@@ -148,19 +145,25 @@ struct MainView: View {
                 Spacer()
                 HStack {
                     Spacer()
+                    
+                    
                     Button(action: {
                         self.modal.toggle()
                     }, label: {
-                        Image(systemName: "plus")
-                           
+                        Text("Ver expedientes")
+                            .foregroundColor(Color.white)
+                            .font(.title3)
+                            .bold()
+                            .shadow(radius: 15 )
+                        Image(systemName: "filemenu.and.selection")
                             .font(.title)
                             .frame(width: 70, height: 70, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             .background(Color.white)
                             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
                             .foregroundColor(.black)
-                            .shadow(radius:10 )
+                            .shadow(radius:5 )
                     }).sheet(isPresented: self.$modal, content: {
-                        Modal_Details()
+                        expedientes_view()
                     })
                     .padding()
                     .shadow(radius: 2 )
@@ -168,23 +171,17 @@ struct MainView: View {
             }
         }
         
-        
-        
-        
-        
-        
-        
     }
     
-
-
-
-struct Principal_Previews: PreviewProvider
-{
-    static var previews: some View
+    
+    
+    
+    struct Principal_Previews: PreviewProvider
     {
-        Principal()
+        static var previews: some View
+        {
+            Principal()
+        }
     }
-}
-
+    
 }

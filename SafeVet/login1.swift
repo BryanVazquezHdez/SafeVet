@@ -5,17 +5,19 @@
 //  Created by Bryan  Vázquez Hernández on 16/03/21.
 //
 
-
-
-
 import SwiftUI
 
 struct login1: View
 {
+    
+    @ObservedObject var networkingManager = NetworkingManager()
+    
     var body: some View {
+        
+      
         NavigationView
         {
-            Home()
+           Home()
                 .preferredColorScheme(.light)
                 .navigationBarHidden(false)
         }
@@ -33,8 +35,7 @@ struct Home : View
         
      @State var username = ""
      @State var password = ""
-     @AppStorage ("stored_User") var user = "bryanvaz14@gmail.com"
-     @AppStorage ("Status") var logged = false
+
     
     
     var body : some View
@@ -165,19 +166,21 @@ struct Home : View
                         })
                     }
                     .padding(.vertical)
-                    
-                    
+
                     
                 }.background(Color.white)
                 .padding(.horizontal,40)
                 .padding(.vertical)
                 .padding(.bottom,70)
-                .cornerRadius(60)
+                .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                
                 Spacer(minLength: 10)
                 
                 Spacer()
             }
             .background(Color("blue").ignoresSafeArea(.all,edges: .all))
+            
+        
         
         
         
